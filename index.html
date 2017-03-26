@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\reset.css">
+    <!-- my bootstrap link -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- link to the css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div id="background">
+        <img src="assets/images/hacker.jpg" class="stretch" alt="background" />
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 ">
+                <h1> My Trivia Game</h1>
+            </div>
+        </div>
+    </div>
+    <div id="quizContainer" class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-5 col-md-2">
+                <span id="timer" class="timer">
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-3 col-md-6">
+                <div id="question" class="question"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-3 col-md-6">
+                <label class="option">
+                    <input type="radio" name="option" value="1" /><span id="opt1"></span></label>
+                <!-- <div class="col-xs-12 col-md-6"> -->
+                <label class="option">
+                    <input type="radio" name="option" value="2" /><span id="opt2"></span></label>
+                <!-- </div> -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-offset-3 col-md-6">
+                <label class="option">
+                    <input type="radio" name="option" value="3" /><span id="opt3"></span></label>
+                <!-- <div class="col-xs-12 col-md-6"> -->
+                <label class="option">
+                    <input type="radio" name="option" value="4" /><span id="opt4"></span></label>
+                <!-- </div> -->
+            </div>
+        </div>
+        <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Submit</button>
+    </div>
+    <div id="endGame" class="end-gm">
+        <div id="result" class="container result" style="display:none;">
+            <button id="retartButton" class="rstrt-btn" onclick="start();">
+                Restart</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js">
+    </script>
+    <script src="assets\javascipt\questions.js"></script>
+    <script src="assets\javascipt\app.js"></script>
+</body>
+
+</html>
