@@ -17,7 +17,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 ">
-                <h1> My Trivia Game</h1>
+                <h1>Worm, Trojans, and Viruses Trivia</h1>
             </div>
         </div>
     </div>
@@ -55,10 +55,16 @@
         </div>
         <button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Submit</button>
     </div>
-    <div id="endGame" class="end-gm">
-        <div id="result" class="container result" style="display:none;">
+    <div id="tookTooLong" class="container" style="display: none;">
+        <div id="tooLong">
+            <button id="nextButton" class="next-btn" onclick="moveOn();">Next</button>
+        </div>
+    </div>
+    <div id="endGame" class="container result">
+        <div id="result" style="display:none;">
             <button id="retartButton" class="rstrt-btn" onclick="start();">
-                Restart</button>
+                Restart
+            </button>
         </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js">
